@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+    let str = prompt("Nhập chuỗi : ");
+    let checkWord = /[a-zA-Z]/g;
+    if (checkWord.test(str)) {
+        let word_matches = str.length;
+        alert("Trong chuỗi có "+word_matches+" từ");
+    }else alert('Trong chuỗi không có từ');
+    </script>
+
+</body>
+</html>

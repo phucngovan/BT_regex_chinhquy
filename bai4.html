@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let str=prompt("nhập mã bảo mật:");
+       regex=/^[A-Z]{4}[.][1][9][9][5]$/;
+       function check(pass) {
+           return regex.test(pass);
+           
+       }
+       if(check(str)) {
+           alert("mã bảo mất đúng!!vui lòng đợi");
+       }else {
+           alert("mã sai");
+       }
+   </script>
+
+</body>
+</html>
